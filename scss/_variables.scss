@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Rockwell Nova";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rockwell Nova"), url("../font/RockwellNova.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rockwell Nova Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rockwell Nova Extra Bold"),
+    url("../font/RockwellNova-ExtraBold.woff") format("woff");
+}
+
+$myNormalFont: "Rockwell Nova", sans-serif;
+$myBoldFont: "Rockwell Nova Extra Bold", sans-serif;

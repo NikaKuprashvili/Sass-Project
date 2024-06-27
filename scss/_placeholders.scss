@@ -1,0 +1,17 @@
+%normal-font-style {
+  color: #222;
+  font-family: $myNormalFont;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+%bold-font-style {
+  color: #222;
+  font-family: $myBoldFont;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
