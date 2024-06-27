@@ -1,31 +1,49 @@
 header {
-  border: 2px solid red;
   padding: 30px;
+  border: 2px solid red;
   .container {
     max-width: 1250px;
     width: 95%;
     margin: 0 auto;
+    position: relative;
+    @include goflex(row, space-between, center);
+    @media (max-width: 910px) {
+      @include goflex(column, start, start);
+    }
     .logo {
-      display: flex;
-      align-items: center;
+      @include goflex(row, start, center);
+      margin-bottom: 10px;
       h2 {
         width: 230px;
         @extend %bold-font-style;
       }
     }
     nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @media (max-width: 910px) {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.7s ease;
+        &.active {
+          display: block;
+          height: 190px;
+          transition: all 0.5s;
+        }
+      }
       ul {
-        display: flex;
-        align-items: center;
+        @include goflex(row, start, center);
         gap: 30px;
+        @media (max-width: 910px) {
+          @include goflex(column, start, start);
+          gap: 10px;
+        }
         li {
           a {
             @extend %normal-font-style;
             font-size: 20px;
             color: #2935a7;
+          }
+          @media (max-width: 910px) {
+            margin-bottom: 10px;
           }
         }
         .input_div {
@@ -48,6 +66,15 @@ header {
           transform: translateY(-50%);
           right: 10px;
         }
+      }
+    }
+    .burger-bar {
+      position: absolute;
+      top: 8px;
+      right: 0;
+      display: none;
+      @media (max-width: 910px) {
+        display: block;
       }
     }
   }

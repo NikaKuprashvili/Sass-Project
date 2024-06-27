@@ -17,16 +17,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <nav>
-          <div class="logo">
-            <img src="Imgs/logo.svg" alt="logo" />
-            <h2>Guitar Community</h2>
-          </div>
+        <div class="logo">
+          <img src="Imgs/logo.svg" alt="logo" />
+          <h2>Guitar Community</h2>
+        </div>
+        <nav id="navigation">
           <ul>
             <li>
               <a href="">Categories</a>
@@ -38,12 +39,29 @@
               <a href="">Blogs</a>
             </li>
             <div class="input_div">
-              <input type="text" placeholder="Search" />
+              <input name="search" type="text" placeholder="Search" />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
           </ul>
         </nav>
+        <div class="burger-bar">
+          <button id="burger" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
     </header>
+
+    <main>
+      <section>
+        <div class="wrapper">
+
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

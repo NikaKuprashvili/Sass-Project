@@ -200,55 +200,140 @@ header .container .logo h2 {
 }
 
 header {
-  border: 2px solid red;
   padding: 30px;
+  border: 2px solid red;
 }
 header .container {
   max-width: 1250px;
   width: 95%;
   margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 910px) {
+  header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 header .container .logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 header .container .logo h2 {
   width: 230px;
 }
-header .container nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media (max-width: 910px) {
+  header .container nav {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  header .container nav.active {
+    display: block;
+    height: 190px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
 }
 header .container nav ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
 }
+@media (max-width: 910px) {
+  header .container nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 10px;
+  }
+}
 header .container nav ul li a {
   font-size: 20px;
   color: #2935a7;
+}
+@media (max-width: 910px) {
+  header .container nav ul li {
+    margin-bottom: 10px;
+  }
 }
 header .container nav ul .input_div {
   position: relative;
@@ -287,4 +372,15 @@ header .container nav ul i {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
+}
+header .container .burger-bar {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: none;
+}
+@media (max-width: 910px) {
+  header .container .burger-bar {
+    display: block;
+  }
 }/*# sourceMappingURL=global.css.map */
