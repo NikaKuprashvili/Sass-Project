@@ -199,14 +199,21 @@ header .container .logo h2 {
   line-height: normal;
 }
 
-header {
-  padding: 30px;
-  border: 2px solid red;
-}
-header .container {
+.s-1 .container, header .container {
   max-width: 1250px;
   width: 95%;
   margin: 0 auto;
+}
+
+header {
+  padding: 30px 20px;
+}
+@media (max-width: 370px) {
+  header {
+    padding: 30px 10px;
+  }
+}
+header .container {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -269,6 +276,11 @@ header .container .logo {
 }
 header .container .logo h2 {
   width: 230px;
+}
+@media (max-width: 430px) {
+  header .container .logo h2 {
+    font-size: 20px;
+  }
 }
 @media (max-width: 910px) {
   header .container nav {
@@ -339,7 +351,7 @@ header .container nav ul .input_div {
   position: relative;
 }
 header .container nav ul input {
-  padding: 10px 15px;
+  padding: 10px 35px 10px 15px;
   outline: none;
   -webkit-border-radius: 8px;
           border-radius: 8px;
@@ -383,4 +395,8 @@ header .container .burger-bar {
   header .container .burger-bar {
     display: block;
   }
+}
+
+.s-1 {
+  margin-top: 40px;
 }/*# sourceMappingURL=global.css.map */

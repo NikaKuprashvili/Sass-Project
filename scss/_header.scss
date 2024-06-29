@@ -1,10 +1,10 @@
 header {
-  padding: 30px;
-  border: 2px solid red;
+  padding: 30px 20px;
+  @media (max-width: 370px) {
+    padding: 30px 10px;
+  }
   .container {
-    max-width: 1250px;
-    width: 95%;
-    margin: 0 auto;
+    @extend %goContainer;
     position: relative;
     @include goflex(row, space-between, center);
     @media (max-width: 910px) {
@@ -16,6 +16,9 @@ header {
       h2 {
         width: 230px;
         @extend %bold-font-style;
+        @media (max-width: 430px) {
+          font-size: 20px;
+        }
       }
     }
     nav {
@@ -50,7 +53,7 @@ header {
           position: relative;
         }
         input {
-          padding: 10px 15px;
+          padding: 10px 35px 10px 15px;
           outline: none;
           border-radius: 8px;
           border: 1px solid #a7a7a7;
