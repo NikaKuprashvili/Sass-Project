@@ -1,6 +1,7 @@
-@mixin goflex($direction, $justify, $items) {
+@mixin goflex($direction, $justify, $items, $wrap) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $items;
+  flex-wrap: $wrap;
 }

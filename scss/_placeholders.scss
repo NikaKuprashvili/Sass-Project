@@ -21,3 +21,9 @@
   width: 95%;
   margin: 0 auto;
 }
+
+%goImgFit {
+  object-fit: cover;
+  min-width: 0;
+  max-width: 100%;
+}

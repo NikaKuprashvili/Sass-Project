@@ -1,17 +1,22 @@
 header {
   padding: 30px 20px;
+  background-color: #fff;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  top: 0;
   @media (max-width: 370px) {
     padding: 30px 10px;
   }
   .container {
     @extend %goContainer;
     position: relative;
-    @include goflex(row, space-between, center);
+    @include goflex(row, space-between, center, nowrap);
     @media (max-width: 910px) {
-      @include goflex(column, start, start);
+      @include goflex(column, start, start, nowrap);
     }
     .logo {
-      @include goflex(row, start, center);
+      @include goflex(row, start, center, nowrap);
       margin-bottom: 10px;
       h2 {
         width: 230px;
@@ -33,10 +38,10 @@ header {
         }
       }
       ul {
-        @include goflex(row, start, center);
+        @include goflex(row, start, center, nowrap);
         gap: 30px;
         @media (max-width: 910px) {
-          @include goflex(column, start, start);
+          @include goflex(column, start, start, nowrap);
           gap: 10px;
         }
         li {
@@ -44,6 +49,9 @@ header {
             @extend %normal-font-style;
             font-size: 20px;
             color: #2935a7;
+            &:hover {
+              font-weight: bolder;
+            }
           }
           @media (max-width: 910px) {
             margin-bottom: 10px;

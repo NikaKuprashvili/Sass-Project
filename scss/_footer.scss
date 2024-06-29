@@ -1,0 +1,44 @@
+footer {
+  @include goflex(null, null, center, null);
+  width: 100%;
+  min-height: 250px;
+  background-color: #a9aedc;
+  .container {
+    @extend %goContainer;
+    .flex-container {
+      @include goflex(null, space-between, center, wrap);
+      @media (max-width: 828px) {
+        @include goflex(column, null, center, null);
+      }
+      .flex-child {
+        ul {
+          @include goflex(null, null, center, null);
+          @media (max-width: 585px) {
+            @include goflex(column, null, null, null);
+          }
+          gap: 30px;
+          li {
+            a {
+              @extend %bold-font-style;
+              font-size: 22px;
+            }
+          }
+        }
+        h2 {
+          width: 230px;
+          @extend %bold-font-style;
+        }
+        .socmedia-icons {
+          img {
+            cursor: pointer;
+            vertical-align: middle;
+          }
+          i {
+            font-size: 40px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
