@@ -257,3 +257,277 @@
     }
   }
 }
+
+.m-2 {
+  .s-1 {
+    margin: 150px 0 60px 0;
+    .container {
+      @extend %goContainer;
+      .wrapper {
+        img {
+          @extend %goImgFit;
+        }
+        h2 {
+          @extend %bold-font-style;
+          font-size: 20px;
+          max-width: 1200px;
+          width: 100%;
+        }
+
+        p {
+          @extend %normal-font-style;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .s-2 {
+    .container {
+      @extend %goContainer;
+      .wrapper {
+        .flex-container {
+          @include goflex(null, space-between, center, wrap);
+          @media (max-width: 1285px) {
+            @include goflex(null, center, center, wrap);
+          }
+          .flex-child {
+            margin-bottom: 30px;
+            img {
+              @extend %goImgFit;
+            }
+
+            h2 {
+              @extend %bold-font-style;
+              font-size: 20px;
+            }
+
+            p {
+              @extend %normal-font-style;
+              font-size: 16px;
+              max-width: 600px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    margin-bottom: 60px;
+  }
+
+  .s-3 {
+    .container {
+      h2 {
+        @extend %bold-font-style;
+      }
+      @extend %goContainer;
+      .slider-wrapper {
+        position: relative;
+        .slide-imgs {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          column-gap: 20px;
+          font-size: 0;
+          overflow-x: auto;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          @media (max-width: 1023px) {
+            column-gap: 10px;
+          }
+          img {
+            width: 400px;
+            height: 450px;
+            object-fit: cover;
+
+            @media (max-width: 1023px) {
+              width: 280px;
+              height: 400px;
+            }
+          }
+        }
+        .slide-button {
+          position: absolute;
+          top: 50%;
+          height: 50px;
+          width: 50px;
+          color: #fff;
+          border: none;
+          outline: none;
+          background-color: #000;
+          font-size: 2.2rem;
+          cursor: pointer;
+          border-radius: 50%;
+          transform: translateY(-50%);
+          &#prev-slide {
+            left: -20px;
+            display: none;
+          }
+
+          &#next-slide {
+            right: -20px;
+          }
+
+          &:hover {
+            background-color: #444;
+          }
+          @media (max-width: 1023px) {
+            display: none !important;
+          }
+        }
+      }
+    }
+    margin-bottom: 100px;
+  }
+}
+
+.m-3 {
+  .s-1 {
+    margin: 150px 0 60px 0;
+    .container {
+      @extend %goContainer;
+      .wrapper {
+        h2 {
+          @extend %bold-font-style;
+          margin-bottom: 30px;
+        }
+        .flex-container {
+          @include goflex(null, space-between, null, wrap);
+          @media (max-width: 1285px) {
+            @include goflex(null, center, null, wrap);
+          }
+          .flex-child {
+            img {
+              @extend %goImgFit;
+              @media (max-width: 1285px) {
+                margin-bottom: 20px;
+              }
+            }
+            .flex-img {
+              @include goflex(column, space-between, null, wrap);
+              height: 100%;
+              .text-div {
+                h2 {
+                  @extend %bold-font-style;
+                  font-size: 20px;
+                  margin-bottom: 10px;
+                }
+
+                .btn-div {
+                  @media (max-width: 1285px) {
+                    margin-bottom: 20px;
+                  }
+                  button {
+                    padding: 8px 20px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 7px;
+                    background-color: #31728e;
+                    @extend %normal-font-style;
+                    font-size: 14px;
+                    color: #fff;
+                  }
+                }
+
+                h3 {
+                  @extend %normal-font-style;
+                  font-size: 15px;
+                  margin-bottom: 8px;
+                }
+              }
+
+              .img-div {
+                display: flex;
+                gap: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .s-2 {
+    .container {
+      @extend %goContainer;
+      .wrapper {
+        h2 {
+          @extend %bold-font-style;
+          margin-bottom: 30px;
+        }
+
+        .flex-container {
+          @include goflex(null, space-between, null, wrap);
+          .flex-child {
+            img {
+              @extend %goImgFit;
+            }
+            @media (max-width: 1243px) {
+              width: 50%;
+              text-align: center;
+              margin-bottom: 10px;
+            }
+            h5 {
+              @extend %normal-font-style;
+              font-size: 13px;
+              margin: 5px 0;
+            }
+
+            h3 {
+              @extend %bold-font-style;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    margin-bottom: 80px;
+  }
+
+  .s-3 {
+    .container {
+      h2 {
+        @extend %bold-font-style;
+        margin-bottom: 30px;
+      }
+      @extend %goContainer;
+      form {
+        @include goflex(column, center, center, null);
+        input {
+          padding: 7px 15px;
+          height: 40px;
+          max-width: 500px;
+          width: 100%;
+          outline: none;
+          font-size: 20px;
+          border-radius: 7px;
+        }
+        input:nth-child(8) {
+          margin-bottom: 20px;
+        }
+
+        label {
+          @extend %normal-font-style;
+        }
+
+        button {
+          height: 40px;
+          max-width: 500px;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 20px;
+          background-color: #434fb5;
+          @extend %normal-font-style;
+          color: #fff;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    margin-bottom: 50px;
+  }
+}

@@ -1,4 +1,6 @@
-.f-1 {
+.f-1,
+.f-2,
+.f-3 {
   @include goflex(null, null, center, null);
   width: 100%;
   min-height: 250px;
@@ -7,12 +9,16 @@
     @extend %goContainer;
     .flex-container {
       @include goflex(null, space-between, center, wrap);
-      @media (max-width: 828px) {
-        @include goflex(column, null, center, null);
+      @media (max-width: 406px) {
+        @include goflex(null, center, center, wrap);
       }
       .flex-child {
         ul {
           @include goflex(null, null, center, null);
+          @media (max-width: 828px) {
+            @include goflex(column, null, center, null);
+            gap: 15px;
+          }
           @media (max-width: 585px) {
             @include goflex(column, null, null, null);
           }

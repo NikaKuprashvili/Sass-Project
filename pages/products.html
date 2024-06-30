@@ -22,6 +22,192 @@
     <link rel="stylesheet" href="../css/global.css" />
   </head>
   <body>
-    <header class="h-2"></header>
+    <header class="h-3">
+      <div class="container">
+        <div class="logo">
+          <img src="../Imgs/logo.svg" alt="logo" />
+          <h2>Guitar Community</h2>
+        </div>
+        <nav id="navigation">
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="blog.html">Blogs</a>
+            </li>
+            <li>
+              <a href="#contactus">Contact</a>
+            </li>
+            <div class="input_div">
+              <input name="search" type="text" placeholder="Search" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </ul>
+        </nav>
+        <div class="burger-bar">
+          <button id="burger" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="m-3">
+      <section id="products" class="s-1">
+        <div class="container">
+          <div class="wrapper">
+            <h2>Product</h2>
+            <div class="flex-container">
+              <div class="flex-child">
+                <img src="../Imgs/guitars22.png" alt="guitar" />
+              </div>
+              <div class="flex-child">
+                <div class="flex-img">
+                  <div class="text-div">
+                    <h2>
+                      Ibanez TMB100-MGR <br />
+                      electric bass
+                    </h2>
+                    <h3>Category: Bass Guitar</h3>
+                    <h3>Brand: Ibanez</h3>
+                    <h3>Colour: Mint Green</h3>
+                    <h3>Number of strings: 4</h3>
+                    <h3>Price: 650$</h3>
+                    <h3>String gauge: .045/.065/.085/.105</h3>
+                    <h3>string space: 19mm</h3>
+                    <h3>bridge: B10 bridge</h3>
+                    <div class="btn-div">
+                      <button>Add to cart</button>
+                    </div>
+                  </div>
+
+                  <div class="img-div">
+                    <img src="../Imgs/guitars23.png" alt="guitars" />
+                    <img src="../Imgs/guitars24.png" alt="guitars" />
+                    <img src="../Imgs/guitars25.png" alt="guitars" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="seealso" class="s-2">
+        <div class="container">
+          <div class="wrapper">
+            <h2>See Also</h2>
+            <div class="flex-container">
+              <div class="flex-child">
+                <img src="../Imgs/guitars26.png" alt="" />
+                <h5>
+                  IBANEZ IJSR190U-WNS <br />
+                  electric bass kit
+                </h5>
+                <h3>477$</h3>
+              </div>
+              <div class="flex-child">
+                <img src="../Imgs/guitars27.png" alt="" />
+                <h5>
+                  Fender Squier Affinity <br />
+                  Series™ Precision Bass® <br />
+                  PJ pack (Black)
+                </h5>
+                <h3>495$</h3>
+              </div>
+              <div class="flex-child">
+                <img src="../Imgs/guitars28.png" alt="" />
+                <h5>
+                  IBANEZ GSR200SM NGT <br />
+                  BASS GUITAR
+                </h5>
+                <h3>600$</h3>
+              </div>
+              <div class="flex-child">
+                <img src="../Imgs/guitars29.png" alt="" />
+                <h5>
+                  Danelectro Longhorn <br />
+                  Bass Thunderbird Pink
+                </h5>
+                <h3>796$</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactus" class="s-3">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="#">
+            <label for="username">Enter Username</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="UserName"
+            />
+
+            <label for="email">Enter E-mail</label>
+            <input type="email" name="email" placeholder="E-mail" id="email" />
+
+            <label for="password">Enter Password</label>
+            <input
+              name="password"
+              id="password"
+              placeholder="Password"
+              type="password"
+            />
+
+            <label for="confirmpassword">Confirm Password</label>
+            <input
+              placeholder="Confirm Password"
+              id="confirmpassword"
+              name="password"
+              type="password"
+            />
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="f-3">
+      <div class="container">
+        <div class="flex-container">
+          <div class="flex-child">
+            <h2>Guitar Community</h2>
+            <div class="socmedia-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <img id="tbc-logo" src="../Imgs/tbc-logo.svg" alt="tbc_logo" />
+            </div>
+          </div>
+          <div class="flex-child">
+            <ul>
+              <li>
+                <a href="../index.html">Main</a>
+              </li>
+              <li>
+                <a href="#products">Product</a>
+              </li>
+              <li>
+                <a href="#seealso">See Also</a>
+              </li>
+              <li>
+                <a href="#contactus">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
