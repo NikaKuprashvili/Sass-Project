@@ -154,7 +154,7 @@ html {
   font-weight: normal;
   src: local("Rockwell Nova Extra Bold"), url("../font/RockwellNova-ExtraBold.woff") format("woff");
 }
-header .container nav ul input::-webkit-input-placeholder {
+.h-1 .container nav ul input::-webkit-input-placeholder {
   color: #222;
   font-family: "Rockwell Nova", sans-serif;
   font-size: 27px;
@@ -162,7 +162,7 @@ header .container nav ul input::-webkit-input-placeholder {
   font-weight: 400;
   line-height: normal;
 }
-header .container nav ul input::-moz-placeholder {
+.h-1 .container nav ul input::-moz-placeholder {
   color: #222;
   font-family: "Rockwell Nova", sans-serif;
   font-size: 27px;
@@ -170,7 +170,7 @@ header .container nav ul input::-moz-placeholder {
   font-weight: 400;
   line-height: normal;
 }
-header .container nav ul input:-ms-input-placeholder {
+.h-1 .container nav ul input:-ms-input-placeholder {
   color: #222;
   font-family: "Rockwell Nova", sans-serif;
   font-size: 27px;
@@ -178,7 +178,7 @@ header .container nav ul input:-ms-input-placeholder {
   font-weight: 400;
   line-height: normal;
 }
-header .container nav ul input::-ms-input-placeholder {
+.h-1 .container nav ul input::-ms-input-placeholder {
   color: #222;
   font-family: "Rockwell Nova", sans-serif;
   font-size: 27px;
@@ -186,7 +186,7 @@ header .container nav ul input::-ms-input-placeholder {
   font-weight: 400;
   line-height: normal;
 }
-.s-5 .container .wrapper .btn-div button, .s-5 .container .wrapper .flex-container .flex-child p, .s-4 .container .wrapper .btn-div button, .s-4 .container .wrapper .flex-container .flex-child h3, .s-3 .container .wrapper .btn-div button, .s-3 .container .wrapper .flex-container .flex-child h3, .s-2 .container .wrapper .flex-container .flex-child h3, .s-1 .container .wrapper .text-div1 h5, header .container nav ul input::placeholder, header .container nav ul li a {
+.m-1 .s-5 .container .wrapper .btn-div button, .m-1 .s-5 .container .wrapper .flex-container .flex-child p, .m-1 .s-4 .container .wrapper .btn-div button, .m-1 .s-4 .container .wrapper .flex-container .flex-child h3, .m-1 .s-3 .container .wrapper .btn-div button, .m-1 .s-3 .container .wrapper .flex-container .flex-child h3, .m-1 .s-2 .container .wrapper .flex-container .flex-child h3, .m-1 .s-1 .container .wrapper .text-div1 h5, .h-1 .container nav ul input::placeholder, .h-1 .container nav ul li a {
   color: #222;
   font-family: "Rockwell Nova", sans-serif;
   font-size: 27px;
@@ -195,7 +195,7 @@ header .container nav ul input::-ms-input-placeholder {
   line-height: normal;
 }
 
-footer .container .flex-container .flex-child h2, footer .container .flex-container .flex-child ul li a, .s-5 .container .wrapper .flex-container .flex-child h2, .s-5 .container .wrapper h2, .s-4 .container .wrapper .flex-container .flex-child .discount, .s-4 .container .wrapper .flex-container .flex-child h2, .s-4 .container .wrapper h2, .s-3 .container .wrapper .flex-container .flex-child h2, .s-3 .container .wrapper h2, .s-2 .container .wrapper h2, .s-1 .container .wrapper .text-div1 h1, header .container .logo h2 {
+.f-1 .container .flex-container .flex-child h2, .f-1 .container .flex-container .flex-child ul li a, .m-1 .s-5 .container .wrapper .flex-container .flex-child h2, .m-1 .s-5 .container .wrapper h2, .m-1 .s-4 .container .wrapper .flex-container .flex-child .discount, .m-1 .s-4 .container .wrapper .flex-container .flex-child h2, .m-1 .s-4 .container .wrapper h2, .m-1 .s-3 .container .wrapper .flex-container .flex-child h2, .m-1 .s-3 .container .wrapper h2, .m-1 .s-2 .container .wrapper h2, .m-1 .s-1 .container .wrapper .text-div1 h1, .h-1 .container .logo h2 {
   color: #222;
   font-family: "Rockwell Nova Extra Bold", sans-serif;
   font-size: 27px;
@@ -204,20 +204,20 @@ footer .container .flex-container .flex-child h2, footer .container .flex-contai
   line-height: normal;
 }
 
-footer .container, .s-5 .container, .s-4 .container, .s-3 .container, .s-2 .container, .s-1 .container, header .container {
+.f-1 .container, .m-1 .s-5 .container, .m-1 .s-4 .container, .m-1 .s-3 .container, .m-1 .s-2 .container, .m-1 .s-1 .container, .h-1 .container {
   max-width: 1250px;
   width: 95%;
   margin: 0 auto;
 }
 
-.s-5 .container .wrapper .flex-container .flex-child img, .s-4 .container .wrapper .flex-container .flex-child img, .s-3 .container .wrapper .flex-container .flex-child img, .s-1 .container .wrapper img {
+.m-1 .s-5 .container .wrapper .flex-container .flex-child img, .m-1 .s-4 .container .wrapper .flex-container .flex-child img, .m-1 .s-3 .container .wrapper .flex-container .flex-child img, .m-1 .s-1 .container .wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
   min-width: 0;
   max-width: 100%;
 }
 
-header {
+.h-1 {
   padding: 30px 20px;
   background-color: #fff;
   z-index: 5;
@@ -226,11 +226,11 @@ header {
   top: 0;
 }
 @media (max-width: 370px) {
-  header {
+  .h-1 {
     padding: 30px 10px;
   }
 }
-header .container {
+.h-1 .container {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -254,7 +254,7 @@ header .container {
           flex-wrap: nowrap;
 }
 @media (max-width: 910px) {
-  header .container {
+  .h-1 .container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -277,7 +277,7 @@ header .container {
             flex-wrap: nowrap;
   }
 }
-header .container .logo {
+.h-1 .container .logo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -300,29 +300,29 @@ header .container .logo {
           flex-wrap: nowrap;
   margin-bottom: 10px;
 }
-header .container .logo h2 {
+.h-1 .container .logo h2 {
   width: 230px;
 }
 @media (max-width: 430px) {
-  header .container .logo h2 {
+  .h-1 .container .logo h2 {
     font-size: 20px;
   }
 }
 @media (max-width: 910px) {
-  header .container nav {
+  .h-1 .container nav {
     height: 0;
     overflow: hidden;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
   }
-  header .container nav.active {
+  .h-1 .container nav.active {
     display: block;
     height: 190px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
-header .container nav ul {
+.h-1 .container nav ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -346,7 +346,7 @@ header .container nav ul {
   gap: 30px;
 }
 @media (max-width: 910px) {
-  header .container nav ul {
+  .h-1 .container nav ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -370,49 +370,49 @@ header .container nav ul {
     gap: 10px;
   }
 }
-header .container nav ul li a {
+.h-1 .container nav ul li a {
   font-size: 20px;
   color: #2935a7;
 }
-header .container nav ul li a:hover {
+.h-1 .container nav ul li a:hover {
   font-weight: bolder;
 }
 @media (max-width: 910px) {
-  header .container nav ul li {
+  .h-1 .container nav ul li {
     margin-bottom: 10px;
   }
 }
-header .container nav ul .input_div {
+.h-1 .container nav ul .input_div {
   position: relative;
 }
-header .container nav ul input {
+.h-1 .container nav ul input {
   padding: 10px 35px 10px 15px;
   outline: none;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   border: 1px solid #a7a7a7;
 }
-header .container nav ul input::-webkit-input-placeholder {
+.h-1 .container nav ul input::-webkit-input-placeholder {
   color: #646464;
   font-size: 15px;
 }
-header .container nav ul input::-moz-placeholder {
+.h-1 .container nav ul input::-moz-placeholder {
   color: #646464;
   font-size: 15px;
 }
-header .container nav ul input:-ms-input-placeholder {
+.h-1 .container nav ul input:-ms-input-placeholder {
   color: #646464;
   font-size: 15px;
 }
-header .container nav ul input::-ms-input-placeholder {
+.h-1 .container nav ul input::-ms-input-placeholder {
   color: #646464;
   font-size: 15px;
 }
-header .container nav ul input::placeholder {
+.h-1 .container nav ul input::placeholder {
   color: #646464;
   font-size: 15px;
 }
-header .container nav ul i {
+.h-1 .container nav ul i {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -420,22 +420,22 @@ header .container nav ul i {
           transform: translateY(-50%);
   right: 10px;
 }
-header .container .burger-bar {
+.h-1 .container .burger-bar {
   position: absolute;
   top: 8px;
   right: 0;
   display: none;
 }
 @media (max-width: 910px) {
-  header .container .burger-bar {
+  .h-1 .container .burger-bar {
     display: block;
   }
 }
 
-.s-1 {
+.m-1 .s-1 {
   margin: 190px 0 60px 0;
 }
-.s-1 .container .wrapper {
+.m-1 .s-1 .container .wrapper {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -459,7 +459,7 @@ header .container .burger-bar {
           flex-wrap: nowrap;
 }
 @media (max-width: 1260px) {
-  .s-1 .container .wrapper {
+  .m-1 .s-1 .container .wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -483,39 +483,38 @@ header .container .burger-bar {
   }
 }
 @media (max-width: 1260px) {
-  .s-1 .container .wrapper .text-div1 {
+  .m-1 .s-1 .container .wrapper .text-div1 {
     position: absolute;
   }
 }
-.s-1 .container .wrapper .text-div1 h1 {
+.m-1 .s-1 .container .wrapper .text-div1 h1 {
   font-size: 48px;
   text-align: center;
 }
 @media (max-width: 1260px) {
-  .s-1 .container .wrapper .text-div1 h1 {
+  .m-1 .s-1 .container .wrapper .text-div1 h1 {
     color: #fff;
     font-size: 20px;
   }
 }
-.s-1 .container .wrapper .text-div1 h5 {
+.m-1 .s-1 .container .wrapper .text-div1 h5 {
   text-align: center;
   font-size: 22px;
 }
 @media (max-width: 1260px) {
-  .s-1 .container .wrapper .text-div1 h5 {
+  .m-1 .s-1 .container .wrapper .text-div1 h5 {
     color: #fff;
     font-size: 16px;
   }
 }
-
-.s-2 {
+.m-1 .s-2 {
   margin-bottom: 60px;
 }
-.s-2 .container .wrapper h2 {
+.m-1 .s-2 .container .wrapper h2 {
   font-size: 40px;
   margin-bottom: 50px;
 }
-.s-2 .container .wrapper .flex-container {
+.m-1 .s-2 .container .wrapper .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -538,36 +537,35 @@ header .container .burger-bar {
           flex-wrap: wrap;
 }
 @media (max-width: 1250px) {
-  .s-2 .container .wrapper .flex-container .flex-child {
+  .m-1 .s-2 .container .wrapper .flex-container .flex-child {
     width: 50%;
     text-align: center;
   }
 }
-.s-2 .container .wrapper .flex-container .flex-child img {
+.m-1 .s-2 .container .wrapper .flex-container .flex-child img {
   -o-object-fit: cover;
      object-fit: cover;
   min-width: 0;
   max-width: 100%;
 }
-.s-2 .container .wrapper .flex-container .flex-child h3 {
+.m-1 .s-2 .container .wrapper .flex-container .flex-child h3 {
   margin-top: 7px;
   font-size: 18px;
   text-align: center;
 }
 @media (max-width: 1250px) {
-  .s-2 .container .wrapper .flex-container .flex-child h3 {
+  .m-1 .s-2 .container .wrapper .flex-container .flex-child h3 {
     margin-bottom: 15px;
   }
 }
-
-.s-3 {
+.m-1 .s-3 {
   margin-bottom: 60px;
 }
-.s-3 .container .wrapper h2 {
+.m-1 .s-3 .container .wrapper h2 {
   margin-bottom: 25px;
   font-size: 40px;
 }
-.s-3 .container .wrapper .flex-container {
+.m-1 .s-3 .container .wrapper .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -589,22 +587,22 @@ header .container .burger-bar {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.s-3 .container .wrapper .flex-container .flex-child {
+.m-1 .s-3 .container .wrapper .flex-container .flex-child {
   margin-top: 25px;
 }
 @media (max-width: 1250px) {
-  .s-3 .container .wrapper .flex-container .flex-child {
+  .m-1 .s-3 .container .wrapper .flex-container .flex-child {
     width: 50%;
     text-align: center;
   }
 }
-.s-3 .container .wrapper .flex-container .flex-child h3 {
+.m-1 .s-3 .container .wrapper .flex-container .flex-child h3 {
   font-size: 13px;
 }
-.s-3 .container .wrapper .flex-container .flex-child h2 {
+.m-1 .s-3 .container .wrapper .flex-container .flex-child h2 {
   font-size: 17px;
 }
-.s-3 .container .wrapper .btn-div {
+.m-1 .s-3 .container .wrapper .btn-div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -627,7 +625,7 @@ header .container .burger-bar {
           flex-wrap: nowrap;
   margin-top: 25px;
 }
-.s-3 .container .wrapper .btn-div button {
+.m-1 .s-3 .container .wrapper .btn-div button {
   color: #fff;
   font-size: 10px;
   -webkit-border-radius: 9px;
@@ -639,19 +637,18 @@ header .container .burger-bar {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.s-3 .container .wrapper .btn-div button:hover {
+.m-1 .s-3 .container .wrapper .btn-div button:hover {
   background-color: #fff;
   color: #2935a7;
 }
-
-.s-4 {
+.m-1 .s-4 {
   margin-bottom: 60px;
 }
-.s-4 .container .wrapper h2 {
+.m-1 .s-4 .container .wrapper h2 {
   font-size: 40px;
   margin-bottom: 50px;
 }
-.s-4 .container .wrapper .flex-container {
+.m-1 .s-4 .container .wrapper .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -674,7 +671,7 @@ header .container .burger-bar {
           flex-wrap: wrap;
 }
 @media (max-width: 1250px) {
-  .s-4 .container .wrapper .flex-container {
+  .m-1 .s-4 .container .wrapper .flex-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -698,16 +695,16 @@ header .container .burger-bar {
     gap: 20px;
   }
 }
-.s-4 .container .wrapper .flex-container .flex-child {
+.m-1 .s-4 .container .wrapper .flex-container .flex-child {
   position: relative;
 }
-.s-4 .container .wrapper .flex-container .flex-child h3 {
+.m-1 .s-4 .container .wrapper .flex-container .flex-child h3 {
   font-size: 13px;
 }
-.s-4 .container .wrapper .flex-container .flex-child h2 {
+.m-1 .s-4 .container .wrapper .flex-container .flex-child h2 {
   font-size: 17px;
 }
-.s-4 .container .wrapper .flex-container .flex-child .discount {
+.m-1 .s-4 .container .wrapper .flex-container .flex-child .discount {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -736,7 +733,7 @@ header .container .burger-bar {
   top: 10px;
   right: 20px;
 }
-.s-4 .container .wrapper .btn-div {
+.m-1 .s-4 .container .wrapper .btn-div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -758,7 +755,7 @@ header .container .burger-bar {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
-.s-4 .container .wrapper .btn-div button {
+.m-1 .s-4 .container .wrapper .btn-div button {
   color: #fff;
   font-size: 10px;
   -webkit-border-radius: 9px;
@@ -770,19 +767,18 @@ header .container .burger-bar {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.s-4 .container .wrapper .btn-div button:hover {
+.m-1 .s-4 .container .wrapper .btn-div button:hover {
   background-color: #fff;
   color: #2935a7;
 }
-
-.s-5 {
+.m-1 .s-5 {
   margin-bottom: 60px;
 }
-.s-5 .container .wrapper h2 {
+.m-1 .s-5 .container .wrapper h2 {
   font-size: 40px;
   margin-bottom: 50px;
 }
-.s-5 .container .wrapper .flex-container {
+.m-1 .s-5 .container .wrapper .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -805,7 +801,7 @@ header .container .burger-bar {
           flex-wrap: wrap;
 }
 @media (max-width: 1285px) {
-  .s-5 .container .wrapper .flex-container {
+  .m-1 .s-5 .container .wrapper .flex-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -817,20 +813,20 @@ header .container .burger-bar {
   }
 }
 @media (max-width: 1285px) {
-  .s-5 .container .wrapper .flex-container .flex-child {
+  .m-1 .s-5 .container .wrapper .flex-container .flex-child {
     margin-bottom: 20px;
   }
 }
-.s-5 .container .wrapper .flex-container .flex-child h2 {
+.m-1 .s-5 .container .wrapper .flex-container .flex-child h2 {
   font-size: 18px;
   margin: 10px 0;
 }
-.s-5 .container .wrapper .flex-container .flex-child p {
+.m-1 .s-5 .container .wrapper .flex-container .flex-child p {
   max-width: 480px;
   width: 100%;
   font-size: 15px;
 }
-.s-5 .container .wrapper .btn-div {
+.m-1 .s-5 .container .wrapper .btn-div {
   margin-top: 50px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -853,7 +849,7 @@ header .container .burger-bar {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
-.s-5 .container .wrapper .btn-div button {
+.m-1 .s-5 .container .wrapper .btn-div button {
   color: #fff;
   font-size: 10px;
   -webkit-border-radius: 9px;
@@ -865,12 +861,12 @@ header .container .burger-bar {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.s-5 .container .wrapper .btn-div button:hover {
+.m-1 .s-5 .container .wrapper .btn-div button:hover {
   background-color: #fff;
   color: #2935a7;
 }
 
-footer {
+.f-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -883,7 +879,7 @@ footer {
   min-height: 250px;
   background-color: #a9aedc;
 }
-footer .container .flex-container {
+.f-1 .container .flex-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -901,7 +897,7 @@ footer .container .flex-container {
           flex-wrap: wrap;
 }
 @media (max-width: 828px) {
-  footer .container .flex-container {
+  .f-1 .container .flex-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -917,7 +913,7 @@ footer .container .flex-container {
             align-items: center;
   }
 }
-footer .container .flex-container .flex-child ul {
+.f-1 .container .flex-container .flex-child ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -929,7 +925,7 @@ footer .container .flex-container .flex-child ul {
   gap: 30px;
 }
 @media (max-width: 585px) {
-  footer .container .flex-container .flex-child ul {
+  .f-1 .container .flex-container .flex-child ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -941,17 +937,17 @@ footer .container .flex-container .flex-child ul {
             flex-direction: column;
   }
 }
-footer .container .flex-container .flex-child ul li a {
+.f-1 .container .flex-container .flex-child ul li a {
   font-size: 22px;
 }
-footer .container .flex-container .flex-child h2 {
+.f-1 .container .flex-container .flex-child h2 {
   width: 230px;
 }
-footer .container .flex-container .flex-child .socmedia-icons img {
+.f-1 .container .flex-container .flex-child .socmedia-icons img {
   cursor: pointer;
   vertical-align: middle;
 }
-footer .container .flex-container .flex-child .socmedia-icons i {
+.f-1 .container .flex-container .flex-child .socmedia-icons i {
   font-size: 40px;
   vertical-align: middle;
 }/*# sourceMappingURL=global.css.map */
