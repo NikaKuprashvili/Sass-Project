@@ -1,3 +1,5 @@
+"use strict";
+
 const scrollSlider = () => {
   const slideButtons = document.querySelectorAll(".slide-button");
   const imageList = document.querySelector(".slide-imgs");
